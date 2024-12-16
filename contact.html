@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information | Gogetta</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+    /* General Body and HTML Styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.716), rgba(0, 0, 0, 0.5)),
+                  url('backgroundimage.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .header img {
+      width: 400px;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .header img:hover {
+      transform: scale(1.1);
+      filter: brightness(1.5);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 1rem 0;
+    }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-container p {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+      color: #ffffff;
+    }
+
+    .contact-container a {
+      color: #fbfafc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-container a:hover {
+      color: #ffffff;
+    }
+
+    footer {
+      margin-top: 2rem;
+      color: #ffffff;
+    }
+
+    footer a {
+      color: #fcfcfc;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    /* Add space at the bottom to make the page longer */
+    .spacer {
+      height: 300px; /* Adjust height for desired page length */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <a href="index.html">
+      <img src="logowhite.png" alt="Gogetta Logo">
+    </a>
+    <h1>Information</h1>
+  </div>
+
+  <!-- Contact Information -->
+  <div class="contact-container">
+    <p>Email us at: <a href="mailto:ygbrandtoronto@gmail.com">ygbrandtoronto@gmail.com</a></p>
+    <p>By using our Service, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service:</p>
+    <ul style="list-style-type: none; padding: 0;">
+      <li><a href="privacy-policy.html">Privacy Policy</a></li>
+      <li><a href="shipping-policy.html">Shipping Policy</a></li>
+      <li><a href="returns-policy.html">Refund Policy</a></li>
+    </ul>
+  </div>
+
+  <!-- Spacer for Extra Length -->
+  <div class="spacer"></div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Gogetta. All Rights Reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+  </footer>
+</body>
+</html>

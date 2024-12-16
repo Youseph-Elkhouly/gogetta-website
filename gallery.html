@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Gogetta</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #000000;
+      color: #ffffff;
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .header {
+      text-align: center;
+      padding: 5rem 0;
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+    .header img {
+      width: 450px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .header img:hover {
+      transform: scale(1.05);
+    }
+
+    h1 {
+      margin-top: 1rem;
+      font-size: 2.5rem;
+      font-weight: 500;
+    }
+
+    .gallery-container {
+      max-width: 1400px; /* Increased width for wider boxes */
+      margin: 2rem auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* Two items per row */
+      gap: 2rem; /* Space between items */
+      padding: 1rem;
+    }
+
+    .gallery-item {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.08); /* Slightly larger hover effect */
+    }
+
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <a href="index.html">
+      <img src="logowhite.png" alt="Gogetta Logo">
+    </a>
+    <h1>Gallery</h1>
+  </div>
+
+  <!-- Gallery Container -->
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="G1.jpg" alt="Gogetta Clothing - 1">
+    </div>
+    <div class="gallery-item">
+      <img src="G2.jpg" alt="Gogetta Clothing - 2">
+    </div>
+    <!-- Video in the third slot -->
+    <div class="gallery-item">
+      <video src="IMG_8810.mov" autoplay loop muted></video>
+    </div>
+    <div class="gallery-item">
+      <img src="G4.jpg" alt="Gogetta Lifestyle - 1">
+    </div>
+    <div class="gallery-item">
+      <img src="G5.jpg" alt="Gogetta Lifestyle - 2">
+    </div>
+    <div class="gallery-item">
+      <video src="Zedsdad.mov" autoplay loop muted></video>
+    </div>
+    <div class="gallery-item">
+      <img src="G6.jpg" alt="Gogetta Clothing - 1">
+    </div>
+    <div class="gallery-item">
+      <img src="G7.jpg" alt="Gogetta Clothing - 1">
+    </div>
+    <div class="gallery-item">
+      <img src="G8.jpg" alt="Gogetta Clothing - 1">
+    </div>
+    <div class="gallery-item">
+      <img src="G9.jpg" alt="Gogetta Clothing - 1">
+    </div>
+  </div>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 Gogetta. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

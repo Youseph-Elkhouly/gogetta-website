@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Gogetta</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+    /* General Body and HTML Styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                  url('backgroundimage1.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+    }
+
+    .header {
+      text-align: center;
+      margin: 2rem auto;
+      color: #ffffff;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0);
+      border-radius: 12px;
+      max-width: 80%;
+    }
+
+    .header img {
+      width: 400px;
+      margin-bottom: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, filter 0.3s ease; /* Smooth scaling and brightness change */
+    }
+
+    .header img:hover {
+      transform: scale(1.1); /* Enlarge the logo slightly */
+      filter: brightness(1.5); /* Brighten the logo */
+    } 
+
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 400;
+    }
+
+    .product-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .product {
+      background: rgba(0, 0, 0, 0.356);
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 1rem;
+      min-height: 350px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    
+
+    .product:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 50px rgb(255, 255, 255);
+    }
+
+    /* Image wrapper to maintain sizes */
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      height: 300px;
+    }
+
+    /* Front image */
+    .image-wrapper img.front {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+      transition: opacity 0.3s ease;
+      opacity: 1; /* Fully visible by default */
+    }
+
+    /* Back image */
+    .image-wrapper img.back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+      transition: opacity 0.3s ease;
+      opacity: 0; /* Hidden by default */
+    }
+
+    /* Show back image on hover */
+    .product:hover .image-wrapper img.front {
+      opacity: 0; /* Hide the front image */
+    }
+
+    .product:hover .image-wrapper img.back {
+      opacity: 1; /* Show the back image */
+    }
+
+    
+
+    /* Unique Styling for Each Image */
+    .product-img-1 {
+      width: 100%;
+      height: 300px;
+      object-fit: scale-down; /* Ensures the image is fully visible */
+      transform: scale(1); /* Scales the image to make it bigger */
+    }
+
+    .product-img-2 {
+      width: 100%;
+      height: 300px; /* Increased height to make the image larger */
+      object-fit: scale-down; /* Ensures the image is fully visible */
+      border-radius: 8px; /* Example: Rounded corners */
+      transform: scale(2) translateX(10px); /* Scales the image and moves it to the right */
+    }
+
+    .product-img-3 {
+      width: 100%;
+      height: 300px;
+      object-fit: scale-down; /* Shrinks the image to fit without cropping */
+      background-color: #f5f5f500; /* Example: Light gray background */
+      transform: scale(1.3); /* Scales the image to make it bigger */
+    }
+
+    .product-img-4 {
+      width: 100%;
+      height: 300px;
+      object-fit: scale-down; /* Shrinks the image to fit without cropping */
+      transform: scale(1.3); /* Scales the image to make it bigger */
+    }
+
+    .product-img-5 {
+      width: 100%;
+      height: 200px;
+      object-fit: fill; /* Stretches the image to fit */
+      
+    }
+
+    .product-img-6 {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      
+    }
+
+    .product h3 {
+      margin: 1rem 0 0.5rem;
+      color: #ffffff;
+      font-size: 1.2rem;
+    }
+
+    .product p {
+      color: #ffffff;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin: 2rem 0;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <a href="index.html">
+      <img src="logowhite.png" alt="Gogetta Logo">
+    </a>
+    <h1>PRODUCTS</h1>
+  </div>
+
+  <!-- Product Grid Section -->
+    <!-- Product Grid Section -->
+    <div class="product-container">
+      <a href="motion-shirt.html" class="product"> <!-- Link to Motion Shirt page -->
+        <div class="image-wrapper">
+          <img src="Drop1TshirtFront.png" alt="Purple Hoodie Front" class="front product-img-1">
+          <img src="Drop1Tshirt.png" alt="Purple Hoodie Back" class="back product-img-1">
+        </div>
+        <h3>"Motion" Shirt</h3>
+        <p>$39.89 CAD</p>
+      </a>
+      <a href="motion-shorts.html" class="product"> <!-- Link to Motion Shorts page -->
+        <div class="image-wrapper">
+          <img src="Drop1Shorts.png" alt="Motion Shorts Front" class="front product-img-2">
+          <img src="Drop1Shorts.png" alt="Motion Shorts Back" class="back product-img-2">
+        </div>
+        <h3>"Motion" Shorts</h3>
+        <p>$64.99 CAD</p>
+      </a>
+      <a href="greyhoodie.html" class="product"> <!-- Link to Wolf Grey Hoodie page -->
+        <div class="image-wrapper">
+          <img src="Drop3.png" alt="Grey Hoodie Front" class="front product-img-3">
+          <img src="Drop3Back.png" alt="Grey Hoodie Back" class="back product-img-3">
+        </div>
+        <h3>Wolf Grey Hoodie</h3>
+        <p>$64.99 CAD</p>
+      </a>
+      <a href="crimson-hoodie.html" class="product"> <!-- Link to Crimson Hoodie page -->
+        <div class="image-wrapper">
+          <img src="Drop2.png" alt="Crimson Hoodie Front" class="front product-img-4">
+          <img src="Drop2Back.png" alt="Crimson Hoodie Back" class="back product-img-4">
+        </div>
+        <h3>Crimson Hoodie</h3>
+        <p>$64.99 CAD</p>
+      </a>
+      
+        
+        
+      </a>
+      
+        
+        
+      </a>
+    </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Gogetta. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
